@@ -2,9 +2,11 @@
 # Braxten Eilert
 # Mini Project 1
 
+
 import yfinance as yf
 import numpy as np
 import matplotlib.pyplot as plt
+
 
 #1
 # Get last 10 days adj close data.
@@ -74,5 +76,13 @@ tltarray = np.array([tltPrices])
 aaplarray = np.array([aaplPrices])
 kwebarray = np.array([kwebPrices])
 # Show and create matplotlib chart from array
-plt.plot(lngarray, xomarray, tltarray, aaplarray, kwebarray)
+plt.plot(lngarray)
+plt.plot(xomarray)
+plt.plot(tltarray)
+plt.plot(aaplarray)
+plt.plot(kwebarray)
+
+
+plt.savefig('Charts/lng.png')
+
 plt.show()
